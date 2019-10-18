@@ -8,8 +8,9 @@ The code has been rewritten in [GluonTS](https://github.com/awslabs/gluon-ts/tre
 we recommend installing it the following way 
 
 ```
-git clone https://TODO.git
-cd gluon-tsts
+git clone https://github.com/mbohlkeschneider/gluon-ts/
+cd gluon-ts
+git checkout mv_release
 pip install -e .
 ```
 
