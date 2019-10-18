@@ -31,8 +31,8 @@ estimator | exchange | solar | elec | traffic | taxi | wiki
 @LSTMFRScaling  |  0.750+/-0.027 |  0.991+/-0.005 |  0.924+/-0.006 |              - |              - |              - 
 @LSTMCOP        |  0.009+/-0.000 |  0.829+/-0.035 |  0.212+/-0.019 |  0.346+/-0.004 |  0.335+/-0.003 |  0.173+/-0.027 
 @GP             |  0.047+/-0.003 |  0.937+/-0.015 |  0.980+/-0.003 |  0.060+/-0.001 |  0.630+/-0.019 |  0.985+/-0.007 
-@GPScaling | 0.030+/-0.004 |  0.387+/-0.019 |  0.061+/-0.082 |  0.069+/-0.002 |  0.219+/-0.019 | 0.164+/-0.031
-@GPCOP | 0.009+/-0.000 | 0.416+/-0.007 | 0.054+/-0.000 | 0.106+/-0.002 | 0.339+/-0.003 | 0.244+/-0.003
+@GPScaling      | 0.030+/-0.004  |  0.387+/-0.019 |  0.061+/-0.082 |  0.069+/-0.002 |  0.219+/-0.019 | 0.164+/-0.031
+@GPCOP          | 0.009+/-0.000  |  0.416+/-0.007 |  0.054+/-0.000 |  0.106+/-0.002 |  0.339+/-0.003 | 0.244+/-0.003
 
 The model will also be released in GluonTS, this fork is created to keep a version with results as close as possible as 
 the one published in the paper. While being close to the submission, the results are not exactly the same as the code 
