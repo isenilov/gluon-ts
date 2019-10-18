@@ -70,10 +70,7 @@ def plot_predictions(dataset, predictor):
 
 if __name__ == '__main__':
     ds = electricity()
-    params = Hyperparams(hybridize=True,
-                         epochs=1,
-                         num_batches_per_epoch=1,
-                         num_eval_samples=100)
+    params = Hyperparams(hybridize=True)
 
     estimator = models_dict["GPCOP"](
          freq=ds.freq,
