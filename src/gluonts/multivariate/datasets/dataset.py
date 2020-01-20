@@ -215,7 +215,12 @@ def taxi_30min(max_target_dim: int = None):
     return make_multivariate_dataset(
         dataset_name="taxi_30min",
         dataset_benchmark_name="taxi_30min",
-        num_test_dates=57,
+        # The dataset corresponds to the taxi dataset used in this reference:
+        # https://arxiv.org/abs/1910.03002 but only contains 56 evaluation
+        # windows. The last evaluation window was removed because there was an
+        # overlap of five time steps in the last and the penultimate evaluation
+        # window.
+        num_test_dates=56,
         prediction_length=24,
         max_target_dim=max_target_dim,
     )
