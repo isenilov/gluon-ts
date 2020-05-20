@@ -27,7 +27,7 @@ def plot(target, forecast, prediction_length):
 
         # (quantile, target_dim, seq_len)
         pred_df = pd.DataFrame(
-            {q: forecast.quantile(q)[dim] for q in [0.1, 0.5, 0.9]},
+            {q: forecast.quantile(q)[:, dim] for q in [0.1, 0.5, 0.9]},
             index=forecast.index,
         )
 
@@ -40,7 +40,7 @@ def plot(target, forecast, prediction_length):
 
 def plot_predictions(dataset, predictor):
     forecast_it, ts_it = make_evaluation_predictions(
-        dataset.test_ds, predictor=predictor, num_eval_samples=100
+        dataset.test_ds, predictor=predictor, num_samples=100
     )
 
     print("predicting")
